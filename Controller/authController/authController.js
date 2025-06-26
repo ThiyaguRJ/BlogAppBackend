@@ -48,10 +48,10 @@ export const Login = async (req, res) => {
     );
 
     res.cookie("token", token, {
-      httpOnly: false,
-      secure: false,
-      sameSite: "strict",
-    });
+  httpOnly: true,        
+  secure: true,          
+  sameSite: "none",      
+});
 
     return res.status(200).json({
       message: "Login successful",
