@@ -11,7 +11,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: "https://blogapp-frontend-six.vercel.app/",
+    origin: "https://blogapp-frontend-six.vercel.app",
     credentials: true,
   })
 );
