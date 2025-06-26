@@ -11,10 +11,14 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://blogappbackend-production-6644.up.railway.app"],
+    origin: [
+      "http://localhost:5173",                  
+      "https://blogapp-frontend-six.vercel.app" 
+    ],
     credentials: true,
   })
 );
+
 
 app.use(express.json());
 app.use(cookieParser());
