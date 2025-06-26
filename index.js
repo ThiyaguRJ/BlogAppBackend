@@ -11,7 +11,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","https://blogappbackend-production-6644.up.railway.app"],
     credentials: true,
   })
 );
